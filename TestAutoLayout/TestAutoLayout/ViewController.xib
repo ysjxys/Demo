@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="EW9-ii-bng" id="V4V-Q8-32T"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EW9-ii-bng">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="fqT-pr-PAX">
+                    <rect key="frame" x="8" y="0.0" width="584" height="300"/>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTl-tC-ehT">
+                    <rect key="frame" x="8" y="300" width="584" height="300"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="apple company" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ud4-WO-R0l">
+                            <rect key="frame" x="0.0" y="0.0" width="584" height="20"/>
+                            <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Ev9-mz-ufc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gw-VV-rgQ">
+                            <rect key="frame" x="0.0" y="20" width="584" height="345"/>
+                            <color key="backgroundColor" red="0.12549019610000001" green="0.69803921570000005" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <string key="text">“苹果公司（Apple Inc. ）是美国的一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩(Ron Wayne)等三人于1976年4月1日创立，并命名为美国苹果电脑公司（Apple Computer Inc. ）， 2007年1月9日更名为苹果公司，总部位于加利福尼亚州的库比蒂诺。
+
+苹果公司创立之初主要开发和销售的个人电脑，截至2014年致力于设计、开发和销售消费电子、计算机软件、在线服务和个人计算机。苹果的Apple II于1970年代助长了个人电脑革命，其后的Macintosh接力于1980年代持续发展。该公司硬件产品主要是Mac电脑系列、iPod媒体播放器、iPhone智能手机和iPad平板电脑；在线服务包括iCloud、iTunes Store和App Store；消费软件包括OS X和iOS操作系统、iTunes多媒体浏览器、Safari网络浏览器，还有iLife和iWork创意和生产力套件。苹果公司在高科技企业中以创新而闻名世界。
+苹果公司1980年12月12日公开招股上市，2012年创下6235亿美元的市值记录，截至2014年6月，苹果公司已经连续三年成为全球市值最大公司。苹果公司在2014年世界500强排行榜中排名第15名。2013年9月30日，在宏盟集团的“全球最佳品牌”报告中，苹果公司超过可口可乐成为世界最有价值品牌。2014年，苹果品牌超越谷歌（Google），成为世界最具价值品牌 。”</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="6gw-VV-rgQ" firstAttribute="leading" secondItem="jTl-tC-ehT" secondAttribute="leading" id="5C0-j7-hJg"/>
+                        <constraint firstAttribute="bottom" secondItem="6gw-VV-rgQ" secondAttribute="bottom" id="Jgd-Sm-9wk"/>
+                        <constraint firstItem="Ud4-WO-R0l" firstAttribute="top" secondItem="6gw-VV-rgQ" secondAttribute="bottom" id="KYr-hd-4js"/>
+                        <constraint firstItem="Ud4-WO-R0l" firstAttribute="leading" secondItem="jTl-tC-ehT" secondAttribute="leading" id="LMI-ZZ-Mdq"/>
+                        <constraint firstItem="Ud4-WO-R0l" firstAttribute="width" secondItem="jTl-tC-ehT" secondAttribute="width" id="Ppg-T5-1GV"/>
+                        <constraint firstItem="Ud4-WO-R0l" firstAttribute="top" secondItem="jTl-tC-ehT" secondAttribute="top" id="QRL-DF-8mA"/>
+                        <constraint firstAttribute="trailing" secondItem="6gw-VV-rgQ" secondAttribute="trailing" id="Sea-s8-egb"/>
+                        <constraint firstAttribute="trailing" secondItem="Ud4-WO-R0l" secondAttribute="trailing" id="n6t-Bn-GwG"/>
+                        <constraint firstItem="6gw-VV-rgQ" firstAttribute="width" secondItem="jTl-tC-ehT" secondAttribute="width" id="na8-SX-at3"/>
+                        <constraint firstItem="6gw-VV-rgQ" firstAttribute="top" secondItem="Ud4-WO-R0l" secondAttribute="bottom" id="nkn-1T-vPc"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="KYr-hd-4js"/>
+                        </mask>
+                    </variation>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailingMargin" secondItem="fqT-pr-PAX" secondAttribute="trailing" id="2Ry-Ho-Om0"/>
+                <constraint firstItem="fqT-pr-PAX" firstAttribute="top" secondItem="EW9-ii-bng" secondAttribute="top" id="BsD-4p-Xeg"/>
+                <constraint firstAttribute="trailingMargin" secondItem="jTl-tC-ehT" secondAttribute="trailing" id="Dgd-Wz-8yi"/>
+                <constraint firstAttribute="bottom" secondItem="jTl-tC-ehT" secondAttribute="bottom" id="JWB-qI-0WA"/>
+                <constraint firstItem="fqT-pr-PAX" firstAttribute="leading" secondItem="EW9-ii-bng" secondAttribute="leadingMargin" id="OtT-se-doB"/>
+                <constraint firstItem="fqT-pr-PAX" firstAttribute="height" secondItem="EW9-ii-bng" secondAttribute="height" multiplier="0.5" id="fPC-fP-tel"/>
+                <constraint firstItem="jTl-tC-ehT" firstAttribute="leading" secondItem="EW9-ii-bng" secondAttribute="leadingMargin" id="kUT-zm-OMx"/>
+                <constraint firstItem="jTl-tC-ehT" firstAttribute="top" secondItem="fqT-pr-PAX" secondAttribute="bottom" id="v9W-jQ-x6N"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple" width="120" height="150"/>
+    </resources>
+</document>
