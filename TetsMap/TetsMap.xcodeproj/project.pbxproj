@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A1FB4671CD97F02000C7EC6 /* CusAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FB4661CD97F02000C7EC6 /* CusAnnotationView.m */; };
+		4AAC72721CDC34710075AA63 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC72711CDC34710075AA63 /* BaseMapViewController.m */; };
+		4AAC72751CDC3F600075AA63 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC72741CDC3F600075AA63 /* UserLocationViewController.m */; };
+		4AAC72781CDC76670075AA63 /* UserAnnotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC72771CDC76670075AA63 /* UserAnnotationViewController.m */; };
+		4AF98E121C23A30400DE69F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E111C23A30400DE69F1 /* main.m */; };
+		4AF98E151C23A30400DE69F1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E141C23A30400DE69F1 /* AppDelegate.m */; };
+		4AF98E181C23A30400DE69F1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E171C23A30400DE69F1 /* ViewController.m */; };
+		4AF98E1E1C23A30400DE69F1 /* TetsMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E1C1C23A30400DE69F1 /* TetsMap.xcdatamodeld */; };
+		4AF98E201C23A30400DE69F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF98E1F1C23A30400DE69F1 /* Assets.xcassets */; };
+		4AF98E2E1C23A30400DE69F1 /* TetsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E2D1C23A30400DE69F1 /* TetsMapTests.m */; };
+		4AF98E391C23A30500DE69F1 /* TetsMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E381C23A30500DE69F1 /* TetsMapUITests.m */; };
+		B82C1F0074FB6AC889096AF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A01EF3F06DAB38597D828 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AF98E2A1C23A30400DE69F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AF98E051C23A30400DE69F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF98E0C1C23A30400DE69F1;
+			remoteInfo = TetsMap;
+		};
+		4AF98E351C23A30500DE69F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AF98E051C23A30400DE69F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AF98E0C1C23A30400DE69F1;
+			remoteInfo = TetsMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4A1FB4651CD97F02000C7EC6 /* CusAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusAnnotationView.h; sourceTree = "<group>"; };
+		4A1FB4661CD97F02000C7EC6 /* CusAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusAnnotationView.m; sourceTree = "<group>"; };
+		4AAC72701CDC34710075AA63 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
+		4AAC72711CDC34710075AA63 /* BaseMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMapViewController.m; sourceTree = "<group>"; };
+		4AAC72731CDC3F600075AA63 /* UserLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLocationViewController.h; sourceTree = "<group>"; };
+		4AAC72741CDC3F600075AA63 /* UserLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLocationViewController.m; sourceTree = "<group>"; };
+		4AAC72761CDC76670075AA63 /* UserAnnotationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserAnnotationViewController.h; sourceTree = "<group>"; };
+		4AAC72771CDC76670075AA63 /* UserAnnotationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserAnnotationViewController.m; sourceTree = "<group>"; };
+		4AAC72791CDC7B960075AA63 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		4AF98E0D1C23A30400DE69F1 /* TetsMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TetsMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF98E111C23A30400DE69F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AF98E131C23A30400DE69F1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AF98E141C23A30400DE69F1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AF98E161C23A30400DE69F1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AF98E171C23A30400DE69F1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AF98E1D1C23A30400DE69F1 /* TetsMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TetsMap.xcdatamodel; sourceTree = "<group>"; };
+		4AF98E1F1C23A30400DE69F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AF98E241C23A30400DE69F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF98E291C23A30400DE69F1 /* TetsMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetsMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF98E2D1C23A30400DE69F1 /* TetsMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TetsMapTests.m; sourceTree = "<group>"; };
+		4AF98E2F1C23A30400DE69F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF98E341C23A30500DE69F1 /* TetsMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetsMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF98E381C23A30500DE69F1 /* TetsMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TetsMapUITests.m; sourceTree = "<group>"; };
+		4AF98E3A1C23A30500DE69F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		829A01EF3F06DAB38597D828 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AF98E0A1C23A30400DE69F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B82C1F0074FB6AC889096AF2 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E261C23A30400DE69F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E311C23A30500DE69F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		365C25D5BA9B1C9EDA09A9F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4AAC72791CDC7B960075AA63 /* CoreLocation.framework */,
+				829A01EF3F06DAB38597D828 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AAC726E1CDC29CD0075AA63 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AAC72731CDC3F600075AA63 /* UserLocationViewController.h */,
+				4AAC72741CDC3F600075AA63 /* UserLocationViewController.m */,
+				4AAC72761CDC76670075AA63 /* UserAnnotationViewController.h */,
+				4AAC72771CDC76670075AA63 /* UserAnnotationViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4AAC726F1CDC2A500075AA63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A1FB4651CD97F02000C7EC6 /* CusAnnotationView.h */,
+				4A1FB4661CD97F02000C7EC6 /* CusAnnotationView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4AF98E041C23A30400DE69F1 = {
+			isa = PBXGroup;
+			children = (
+				4AF98E0F1C23A30400DE69F1 /* TetsMap */,
+				4AF98E2C1C23A30400DE69F1 /* TetsMapTests */,
+				4AF98E371C23A30500DE69F1 /* TetsMapUITests */,
+				4AF98E0E1C23A30400DE69F1 /* Products */,
+				6311A04E0442211F87225AF1 /* Pods */,
+				365C25D5BA9B1C9EDA09A9F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AF98E0E1C23A30400DE69F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AF98E0D1C23A30400DE69F1 /* TetsMap.app */,
+				4AF98E291C23A30400DE69F1 /* TetsMapTests.xctest */,
+				4AF98E341C23A30500DE69F1 /* TetsMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF98E0F1C23A30400DE69F1 /* TetsMap */ = {
+			isa = PBXGroup;
+			children = (
+				4AAC726F1CDC2A500075AA63 /* View */,
+				4AAC726E1CDC29CD0075AA63 /* ViewController */,
+				4AF98E131C23A30400DE69F1 /* AppDelegate.h */,
+				4AF98E141C23A30400DE69F1 /* AppDelegate.m */,
+				4AF98E161C23A30400DE69F1 /* ViewController.h */,
+				4AF98E171C23A30400DE69F1 /* ViewController.m */,
+				4AAC72701CDC34710075AA63 /* BaseMapViewController.h */,
+				4AAC72711CDC34710075AA63 /* BaseMapViewController.m */,
+				4AF98E1F1C23A30400DE69F1 /* Assets.xcassets */,
+				4AF98E241C23A30400DE69F1 /* Info.plist */,
+				4AF98E1C1C23A30400DE69F1 /* TetsMap.xcdatamodeld */,
+				4AF98E101C23A30400DE69F1 /* Supporting Files */,
+			);
+			path = TetsMap;
+			sourceTree = "<group>";
+		};
+		4AF98E101C23A30400DE69F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AF98E111C23A30400DE69F1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AF98E2C1C23A30400DE69F1 /* TetsMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF98E2D1C23A30400DE69F1 /* TetsMapTests.m */,
+				4AF98E2F1C23A30400DE69F1 /* Info.plist */,
+			);
+			path = TetsMapTests;
+			sourceTree = "<group>";
+		};
+		4AF98E371C23A30500DE69F1 /* TetsMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF98E381C23A30500DE69F1 /* TetsMapUITests.m */,
+				4AF98E3A1C23A30500DE69F1 /* Info.plist */,
+			);
+			path = TetsMapUITests;
+			sourceTree = "<group>";
+		};
+		6311A04E0442211F87225AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */,
+				01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AF98E0C1C23A30400DE69F1 /* TetsMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF98E3D1C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMap" */;
+			buildPhases = (
+				401B788B2EE86AB22374A441 /* Check Pods Manifest.lock */,
+				4AF98E091C23A30400DE69F1 /* Sources */,
+				4AF98E0A1C23A30400DE69F1 /* Frameworks */,
+				4AF98E0B1C23A30400DE69F1 /* Resources */,
+				E00B32B7BDECC8BE2364596C /* Copy Pods Resources */,
+				5B9EDD90652E9F639513E207 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TetsMap;
+			productName = TetsMap;
+			productReference = 4AF98E0D1C23A30400DE69F1 /* TetsMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AF98E281C23A30400DE69F1 /* TetsMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF98E401C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMapTests" */;
+			buildPhases = (
+				4AF98E251C23A30400DE69F1 /* Sources */,
+				4AF98E261C23A30400DE69F1 /* Frameworks */,
+				4AF98E271C23A30400DE69F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AF98E2B1C23A30400DE69F1 /* PBXTargetDependency */,
+			);
+			name = TetsMapTests;
+			productName = TetsMapTests;
+			productReference = 4AF98E291C23A30400DE69F1 /* TetsMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AF98E331C23A30500DE69F1 /* TetsMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF98E431C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMapUITests" */;
+			buildPhases = (
+				4AF98E301C23A30500DE69F1 /* Sources */,
+				4AF98E311C23A30500DE69F1 /* Frameworks */,
+				4AF98E321C23A30500DE69F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AF98E361C23A30500DE69F1 /* PBXTargetDependency */,
+			);
+			name = TetsMapUITests;
+			productName = TetsMapUITests;
+			productReference = 4AF98E341C23A30500DE69F1 /* TetsMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AF98E051C23A30400DE69F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Harry;
+				TargetAttributes = {
+					4AF98E0C1C23A30400DE69F1 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					4AF98E281C23A30400DE69F1 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4AF98E0C1C23A30400DE69F1;
+					};
+					4AF98E331C23A30500DE69F1 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 4AF98E0C1C23A30400DE69F1;
+					};
+				};
+			};
+			buildConfigurationList = 4AF98E081C23A30400DE69F1 /* Build configuration list for PBXProject "TetsMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AF98E041C23A30400DE69F1;
+			productRefGroup = 4AF98E0E1C23A30400DE69F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF98E0C1C23A30400DE69F1 /* TetsMap */,
+				4AF98E281C23A30400DE69F1 /* TetsMapTests */,
+				4AF98E331C23A30500DE69F1 /* TetsMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AF98E0B1C23A30400DE69F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF98E201C23A30400DE69F1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E271C23A30400DE69F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E321C23A30500DE69F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		401B788B2EE86AB22374A441 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5B9EDD90652E9F639513E207 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E00B32B7BDECC8BE2364596C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AF98E091C23A30400DE69F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF98E181C23A30400DE69F1 /* ViewController.m in Sources */,
+				4AF98E151C23A30400DE69F1 /* AppDelegate.m in Sources */,
+				4AAC72781CDC76670075AA63 /* UserAnnotationViewController.m in Sources */,
+				4A1FB4671CD97F02000C7EC6 /* CusAnnotationView.m in Sources */,
+				4AAC72751CDC3F600075AA63 /* UserLocationViewController.m in Sources */,
+				4AF98E1E1C23A30400DE69F1 /* TetsMap.xcdatamodeld in Sources */,
+				4AAC72721CDC34710075AA63 /* BaseMapViewController.m in Sources */,
+				4AF98E121C23A30400DE69F1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E251C23A30400DE69F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF98E2E1C23A30400DE69F1 /* TetsMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AF98E301C23A30500DE69F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF98E391C23A30500DE69F1 /* TetsMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AF98E2B1C23A30400DE69F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AF98E0C1C23A30400DE69F1 /* TetsMap */;
+			targetProxy = 4AF98E2A1C23A30400DE69F1 /* PBXContainerItemProxy */;
+		};
+		4AF98E361C23A30500DE69F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AF98E0C1C23A30400DE69F1 /* TetsMap */;
+			targetProxy = 4AF98E351C23A30500DE69F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4AF98E3B1C23A30500DE69F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AF98E3C1C23A30500DE69F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AF98E3E1C23A30500DE69F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TetsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AF98E3F1C23A30500DE69F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TetsMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4AF98E411C23A30500DE69F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TetsMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TetsMap.app/TetsMap";
+			};
+			name = Debug;
+		};
+		4AF98E421C23A30500DE69F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TetsMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TetsMap.app/TetsMap";
+			};
+			name = Release;
+		};
+		4AF98E441C23A30500DE69F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TetsMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TetsMap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		4AF98E451C23A30500DE69F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TetsMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TetsMap;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AF98E081C23A30400DE69F1 /* Build configuration list for PBXProject "TetsMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF98E3B1C23A30500DE69F1 /* Debug */,
+				4AF98E3C1C23A30500DE69F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF98E3D1C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF98E3E1C23A30500DE69F1 /* Debug */,
+				4AF98E3F1C23A30500DE69F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF98E401C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF98E411C23A30500DE69F1 /* Debug */,
+				4AF98E421C23A30500DE69F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF98E431C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF98E441C23A30500DE69F1 /* Debug */,
+				4AF98E451C23A30500DE69F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AF98E1C1C23A30400DE69F1 /* TetsMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AF98E1D1C23A30400DE69F1 /* TetsMap.xcdatamodel */,
+			);
+			currentVersion = 4AF98E1D1C23A30400DE69F1 /* TetsMap.xcdatamodel */;
+			path = TetsMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AF98E051C23A30400DE69F1 /* Project object */;
+}
