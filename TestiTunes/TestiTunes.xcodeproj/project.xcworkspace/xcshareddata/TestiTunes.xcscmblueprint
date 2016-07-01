@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : 0,
+    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C88C0C5E-20CB-4F60-93F2-D65EBB6CF526",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : "",
+    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : "workspaceYSJ\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TestiTunes",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TestiTunes\/TestiTunes.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ysjxys\/DemoPlace.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88882EAE0350D39BDE1FAAD76CD7D66D37718A05"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ysjxys\/TestMediaPlayer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843"
+    }
+  ]
+}
