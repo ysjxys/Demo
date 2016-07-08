@@ -42,8 +42,8 @@
 
 - (void)btnClicked{
     self.progress.completedUnitCount += 100;
-//    NSURL *URL = [NSURL URLWithString:@"http://pub-web.leziyou.com/leziyou-web-new/api/v2/topic!types.action"];
-    NSURL *URL = [NSURL URLWithString:@"http://192.168.10.119:8080/hztour-api/api/travel!listHotspotByParentCode.action?page=0&channelCode=ZTESEJUSUO&keyStr=%E7%81%AF%E7%AC%BC"];
+    NSURL *URL = [NSURL URLWithString:@"http://pub-web.leziyou.com/leziyou-web-new/api/v2/topic!types.action"];
+//    NSURL *URL = [NSURL URLWithString:@"http://192.168.10.119:8080/hztour-api/api/travel!listHotspotByParentCode.action?page=0&channelCode=ZTESEJUSUO&keyStr=%E7%81%AF%E7%AC%BC"];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSProgress *progress = nil;
     

@@ -403,6 +403,7 @@
 				TargetAttributes = {
 					4AD9BFBB1C16C8DE00E0EB5C = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2EUZ5J663F;
 					};
 					4AD9BFD71C16C8DE00E0EB5C = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -622,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestShare/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
@@ -651,6 +653,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TestShare/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",

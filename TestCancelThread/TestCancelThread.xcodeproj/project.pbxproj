@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A8F29791D2F963F002D08A0 /* NSObject+YSJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F29781D2F963F002D08A0 /* NSObject+YSJ.m */; };
+		4AECA45D1D2F54C500A6FDE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA45C1D2F54C500A6FDE1 /* main.m */; };
+		4AECA4601D2F54C500A6FDE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA45F1D2F54C500A6FDE1 /* AppDelegate.m */; };
+		4AECA4631D2F54C500A6FDE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA4621D2F54C500A6FDE1 /* ViewController.m */; };
+		4AECA4661D2F54C500A6FDE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AECA4641D2F54C500A6FDE1 /* Main.storyboard */; };
+		4AECA4691D2F54C500A6FDE1 /* TestCancelThread.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA4671D2F54C500A6FDE1 /* TestCancelThread.xcdatamodeld */; };
+		4AECA46B1D2F54C500A6FDE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AECA46A1D2F54C500A6FDE1 /* Assets.xcassets */; };
+		4AECA46E1D2F54C500A6FDE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AECA46C1D2F54C500A6FDE1 /* LaunchScreen.storyboard */; };
+		4AECA4791D2F54C500A6FDE1 /* TestCancelThreadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA4781D2F54C500A6FDE1 /* TestCancelThreadTests.m */; };
+		4AECA4841D2F54C500A6FDE1 /* TestCancelThreadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA4831D2F54C500A6FDE1 /* TestCancelThreadUITests.m */; };
+		4AECA4931D2F562500A6FDE1 /* YSJWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AECA4921D2F562500A6FDE1 /* YSJWebService.m */; };
+		5CA151972F5F3EEFDADC082D /* libPods-TestCancelThread.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE6900221930F6714DAF8BA /* libPods-TestCancelThread.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AECA4751D2F54C500A6FDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AECA4501D2F54C500A6FDE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AECA4571D2F54C500A6FDE1;
+			remoteInfo = TestCancelThread;
+		};
+		4AECA4801D2F54C500A6FDE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AECA4501D2F54C500A6FDE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AECA4571D2F54C500A6FDE1;
+			remoteInfo = TestCancelThread;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06938F82EBB33A294A6CDBD3 /* Pods-TestCancelThread.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCancelThread.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestCancelThread/Pods-TestCancelThread.release.xcconfig"; sourceTree = "<group>"; };
+		4A8F29771D2F963F002D08A0 /* NSObject+YSJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YSJ.h"; sourceTree = "<group>"; };
+		4A8F29781D2F963F002D08A0 /* NSObject+YSJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YSJ.m"; sourceTree = "<group>"; };
+		4AECA4581D2F54C500A6FDE1 /* TestCancelThread.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCancelThread.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AECA45C1D2F54C500A6FDE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AECA45E1D2F54C500A6FDE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AECA45F1D2F54C500A6FDE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AECA4611D2F54C500A6FDE1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4AECA4621D2F54C500A6FDE1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4AECA4651D2F54C500A6FDE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AECA4681D2F54C500A6FDE1 /* TestCancelThread.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestCancelThread.xcdatamodel; sourceTree = "<group>"; };
+		4AECA46A1D2F54C500A6FDE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AECA46D1D2F54C500A6FDE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AECA46F1D2F54C500A6FDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AECA4741D2F54C500A6FDE1 /* TestCancelThreadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCancelThreadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AECA4781D2F54C500A6FDE1 /* TestCancelThreadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCancelThreadTests.m; sourceTree = "<group>"; };
+		4AECA47A1D2F54C500A6FDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AECA47F1D2F54C500A6FDE1 /* TestCancelThreadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCancelThreadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AECA4831D2F54C500A6FDE1 /* TestCancelThreadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCancelThreadUITests.m; sourceTree = "<group>"; };
+		4AECA4851D2F54C500A6FDE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AECA4911D2F562500A6FDE1 /* YSJWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSJWebService.h; sourceTree = "<group>"; };
+		4AECA4921D2F562500A6FDE1 /* YSJWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSJWebService.m; sourceTree = "<group>"; };
+		83567768599464C8CC74E69F /* Pods-TestCancelThread.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestCancelThread.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestCancelThread/Pods-TestCancelThread.debug.xcconfig"; sourceTree = "<group>"; };
+		DDE6900221930F6714DAF8BA /* libPods-TestCancelThread.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestCancelThread.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AECA4551D2F54C500A6FDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA151972F5F3EEFDADC082D /* libPods-TestCancelThread.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA4711D2F54C500A6FDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA47C1D2F54C500A6FDE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2CFF85DFDAB52415FD50DF8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDE6900221930F6714DAF8BA /* libPods-TestCancelThread.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4AECA44F1D2F54C500A6FDE1 = {
+			isa = PBXGroup;
+			children = (
+				4AECA45A1D2F54C500A6FDE1 /* TestCancelThread */,
+				4AECA4771D2F54C500A6FDE1 /* TestCancelThreadTests */,
+				4AECA4821D2F54C500A6FDE1 /* TestCancelThreadUITests */,
+				4AECA4591D2F54C500A6FDE1 /* Products */,
+				863B9EA7816300CA2F60472C /* Pods */,
+				2CFF85DFDAB52415FD50DF8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4AECA4591D2F54C500A6FDE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AECA4581D2F54C500A6FDE1 /* TestCancelThread.app */,
+				4AECA4741D2F54C500A6FDE1 /* TestCancelThreadTests.xctest */,
+				4AECA47F1D2F54C500A6FDE1 /* TestCancelThreadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AECA45A1D2F54C500A6FDE1 /* TestCancelThread */ = {
+			isa = PBXGroup;
+			children = (
+				4AECA45E1D2F54C500A6FDE1 /* AppDelegate.h */,
+				4AECA45F1D2F54C500A6FDE1 /* AppDelegate.m */,
+				4AECA4611D2F54C500A6FDE1 /* ViewController.h */,
+				4AECA4621D2F54C500A6FDE1 /* ViewController.m */,
+				4A8F29771D2F963F002D08A0 /* NSObject+YSJ.h */,
+				4A8F29781D2F963F002D08A0 /* NSObject+YSJ.m */,
+				4AECA4911D2F562500A6FDE1 /* YSJWebService.h */,
+				4AECA4921D2F562500A6FDE1 /* YSJWebService.m */,
+				4AECA4641D2F54C500A6FDE1 /* Main.storyboard */,
+				4AECA46A1D2F54C500A6FDE1 /* Assets.xcassets */,
+				4AECA46C1D2F54C500A6FDE1 /* LaunchScreen.storyboard */,
+				4AECA46F1D2F54C500A6FDE1 /* Info.plist */,
+				4AECA4671D2F54C500A6FDE1 /* TestCancelThread.xcdatamodeld */,
+				4AECA45B1D2F54C500A6FDE1 /* Supporting Files */,
+			);
+			path = TestCancelThread;
+			sourceTree = "<group>";
+		};
+		4AECA45B1D2F54C500A6FDE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AECA45C1D2F54C500A6FDE1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AECA4771D2F54C500A6FDE1 /* TestCancelThreadTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AECA4781D2F54C500A6FDE1 /* TestCancelThreadTests.m */,
+				4AECA47A1D2F54C500A6FDE1 /* Info.plist */,
+			);
+			path = TestCancelThreadTests;
+			sourceTree = "<group>";
+		};
+		4AECA4821D2F54C500A6FDE1 /* TestCancelThreadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AECA4831D2F54C500A6FDE1 /* TestCancelThreadUITests.m */,
+				4AECA4851D2F54C500A6FDE1 /* Info.plist */,
+			);
+			path = TestCancelThreadUITests;
+			sourceTree = "<group>";
+		};
+		863B9EA7816300CA2F60472C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83567768599464C8CC74E69F /* Pods-TestCancelThread.debug.xcconfig */,
+				06938F82EBB33A294A6CDBD3 /* Pods-TestCancelThread.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AECA4571D2F54C500A6FDE1 /* TestCancelThread */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AECA4881D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThread" */;
+			buildPhases = (
+				3E3DB226C8983C328F4A382A /* [CP] Check Pods Manifest.lock */,
+				4AECA4541D2F54C500A6FDE1 /* Sources */,
+				4AECA4551D2F54C500A6FDE1 /* Frameworks */,
+				4AECA4561D2F54C500A6FDE1 /* Resources */,
+				C96E6A4E5892B08F301DEE75 /* [CP] Embed Pods Frameworks */,
+				A5DDDACAF5338B543DB0689E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCancelThread;
+			productName = TestCancelThread;
+			productReference = 4AECA4581D2F54C500A6FDE1 /* TestCancelThread.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AECA4731D2F54C500A6FDE1 /* TestCancelThreadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AECA48B1D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThreadTests" */;
+			buildPhases = (
+				4AECA4701D2F54C500A6FDE1 /* Sources */,
+				4AECA4711D2F54C500A6FDE1 /* Frameworks */,
+				4AECA4721D2F54C500A6FDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AECA4761D2F54C500A6FDE1 /* PBXTargetDependency */,
+			);
+			name = TestCancelThreadTests;
+			productName = TestCancelThreadTests;
+			productReference = 4AECA4741D2F54C500A6FDE1 /* TestCancelThreadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AECA47E1D2F54C500A6FDE1 /* TestCancelThreadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AECA48E1D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThreadUITests" */;
+			buildPhases = (
+				4AECA47B1D2F54C500A6FDE1 /* Sources */,
+				4AECA47C1D2F54C500A6FDE1 /* Frameworks */,
+				4AECA47D1D2F54C500A6FDE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AECA4811D2F54C500A6FDE1 /* PBXTargetDependency */,
+			);
+			name = TestCancelThreadUITests;
+			productName = TestCancelThreadUITests;
+			productReference = 4AECA47F1D2F54C500A6FDE1 /* TestCancelThreadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AECA4501D2F54C500A6FDE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = yushengjie;
+				TargetAttributes = {
+					4AECA4571D2F54C500A6FDE1 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4AECA4731D2F54C500A6FDE1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4AECA4571D2F54C500A6FDE1;
+					};
+					4AECA47E1D2F54C500A6FDE1 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4AECA4571D2F54C500A6FDE1;
+					};
+				};
+			};
+			buildConfigurationList = 4AECA4531D2F54C500A6FDE1 /* Build configuration list for PBXProject "TestCancelThread" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AECA44F1D2F54C500A6FDE1;
+			productRefGroup = 4AECA4591D2F54C500A6FDE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AECA4571D2F54C500A6FDE1 /* TestCancelThread */,
+				4AECA4731D2F54C500A6FDE1 /* TestCancelThreadTests */,
+				4AECA47E1D2F54C500A6FDE1 /* TestCancelThreadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AECA4561D2F54C500A6FDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AECA46E1D2F54C500A6FDE1 /* LaunchScreen.storyboard in Resources */,
+				4AECA46B1D2F54C500A6FDE1 /* Assets.xcassets in Resources */,
+				4AECA4661D2F54C500A6FDE1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA4721D2F54C500A6FDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA47D1D2F54C500A6FDE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E3DB226C8983C328F4A382A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A5DDDACAF5338B543DB0689E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestCancelThread/Pods-TestCancelThread-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C96E6A4E5892B08F301DEE75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestCancelThread/Pods-TestCancelThread-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AECA4541D2F54C500A6FDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AECA4631D2F54C500A6FDE1 /* ViewController.m in Sources */,
+				4AECA4601D2F54C500A6FDE1 /* AppDelegate.m in Sources */,
+				4A8F29791D2F963F002D08A0 /* NSObject+YSJ.m in Sources */,
+				4AECA45D1D2F54C500A6FDE1 /* main.m in Sources */,
+				4AECA4931D2F562500A6FDE1 /* YSJWebService.m in Sources */,
+				4AECA4691D2F54C500A6FDE1 /* TestCancelThread.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA4701D2F54C500A6FDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AECA4791D2F54C500A6FDE1 /* TestCancelThreadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AECA47B1D2F54C500A6FDE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AECA4841D2F54C500A6FDE1 /* TestCancelThreadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AECA4761D2F54C500A6FDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AECA4571D2F54C500A6FDE1 /* TestCancelThread */;
+			targetProxy = 4AECA4751D2F54C500A6FDE1 /* PBXContainerItemProxy */;
+		};
+		4AECA4811D2F54C500A6FDE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AECA4571D2F54C500A6FDE1 /* TestCancelThread */;
+			targetProxy = 4AECA4801D2F54C500A6FDE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AECA4641D2F54C500A6FDE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AECA4651D2F54C500A6FDE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AECA46C1D2F54C500A6FDE1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AECA46D1D2F54C500A6FDE1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AECA4861D2F54C500A6FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4AECA4871D2F54C500A6FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AECA4891D2F54C500A6FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83567768599464C8CC74E69F /* Pods-TestCancelThread.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestCancelThread/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThread;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4AECA48A1D2F54C500A6FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06938F82EBB33A294A6CDBD3 /* Pods-TestCancelThread.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TestCancelThread/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThread;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4AECA48C1D2F54C500A6FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestCancelThreadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThreadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCancelThread.app/TestCancelThread";
+			};
+			name = Debug;
+		};
+		4AECA48D1D2F54C500A6FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TestCancelThreadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThreadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestCancelThread.app/TestCancelThread";
+			};
+			name = Release;
+		};
+		4AECA48F1D2F54C500A6FDE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestCancelThreadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThreadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestCancelThread;
+			};
+			name = Debug;
+		};
+		4AECA4901D2F54C500A6FDE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestCancelThreadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yushengjie.TestCancelThreadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestCancelThread;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AECA4531D2F54C500A6FDE1 /* Build configuration list for PBXProject "TestCancelThread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AECA4861D2F54C500A6FDE1 /* Debug */,
+				4AECA4871D2F54C500A6FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AECA4881D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThread" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AECA4891D2F54C500A6FDE1 /* Debug */,
+				4AECA48A1D2F54C500A6FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AECA48B1D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThreadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AECA48C1D2F54C500A6FDE1 /* Debug */,
+				4AECA48D1D2F54C500A6FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AECA48E1D2F54C500A6FDE1 /* Build configuration list for PBXNativeTarget "TestCancelThreadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AECA48F1D2F54C500A6FDE1 /* Debug */,
+				4AECA4901D2F54C500A6FDE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AECA4671D2F54C500A6FDE1 /* TestCancelThread.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AECA4681D2F54C500A6FDE1 /* TestCancelThread.xcdatamodel */,
+			);
+			currentVersion = 4AECA4681D2F54C500A6FDE1 /* TestCancelThread.xcdatamodel */;
+			path = TestCancelThread.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AECA4501D2F54C500A6FDE1 /* Project object */;
+}
