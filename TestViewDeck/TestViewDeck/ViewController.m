@@ -10,6 +10,7 @@
 #import "LeftViewController.h"
 #import "RightViewController.h"
 #import "ViewDeck.h"
+#import "ReplaceViewController.h"
 
 @interface ViewController ()
 

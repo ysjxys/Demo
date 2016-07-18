@@ -7,6 +7,7 @@
 //
 
 #import "LeftViewController.h"
+#import "IIViewDeckController.h"
 
 @interface LeftViewController ()
 
@@ -17,6 +18,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    btn.frame = CGRectMake(0, 200, 40, 40);
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+}
+
+- (void)btnClicked{
+    NSLog(@"xx");
+    IIViewDeckController *deckVC = (IIViewDeckController *)[[UIApplication sharedApplication] keyWindow].rootViewController;
+    NSLog(@"%d",[deckVC canRightViewPushViewControllerOverCenterController]);
+    
 }
 
 - (void)didReceiveMemoryWarning {

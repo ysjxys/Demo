@@ -19,6 +19,7 @@
 		4A3ACAB41D06C6B700F4170D /* TestViewDeckUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ACAB31D06C6B700F4170D /* TestViewDeckUITests.m */; };
 		4A3ACAC31D06CB4100F4170D /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ACAC21D06CB4100F4170D /* LeftViewController.m */; };
 		4A3ACAC61D06CB4F00F4170D /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3ACAC51D06CB4F00F4170D /* RightViewController.m */; };
+		4A8F297C1D3644C9002D08A0 /* ReplaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F297B1D3644C9002D08A0 /* ReplaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		4A3ACAC21D06CB4100F4170D /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
 		4A3ACAC41D06CB4F00F4170D /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
 		4A3ACAC51D06CB4F00F4170D /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		4A8F297A1D3644C9002D08A0 /* ReplaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceViewController.h; sourceTree = "<group>"; };
+		4A8F297B1D3644C9002D08A0 /* ReplaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceViewController.m; sourceTree = "<group>"; };
 		695FA7574C58AB4FF229E78B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22236EE3323C5346E99A56D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +127,8 @@
 				4A3ACAC21D06CB4100F4170D /* LeftViewController.m */,
 				4A3ACAC41D06CB4F00F4170D /* RightViewController.h */,
 				4A3ACAC51D06CB4F00F4170D /* RightViewController.m */,
+				4A8F297A1D3644C9002D08A0 /* ReplaceViewController.h */,
+				4A8F297B1D3644C9002D08A0 /* ReplaceViewController.m */,
 				4A3ACA941D06C6B700F4170D /* Main.storyboard */,
 				4A3ACA9A1D06C6B700F4170D /* Assets.xcassets */,
 				4A3ACA9C1D06C6B700F4170D /* LaunchScreen.storyboard */,
@@ -364,6 +369,7 @@
 				4A3ACA8D1D06C6B700F4170D /* main.m in Sources */,
 				4A3ACA991D06C6B700F4170D /* TestViewDeck.xcdatamodeld in Sources */,
 				4A3ACAC61D06CB4F00F4170D /* RightViewController.m in Sources */,
+				4A8F297C1D3644C9002D08A0 /* ReplaceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

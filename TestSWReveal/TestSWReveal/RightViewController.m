@@ -1,14 +1,12 @@
 //
 //  RightViewController.m
-//  TestViewDeck
+//  TestSWReveal
 //
-//  Created by ysj on 16/6/7.
+//  Created by ysj on 16/7/15.
 //  Copyright © 2016年 yushengjie. All rights reserved.
 //
 
 #import "RightViewController.h"
-#import "IIViewDeckController.h"
-#import "ReplaceViewController.h"
 
 @interface RightViewController ()
 
@@ -19,19 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoLight];
-    btn.frame = CGRectMake(260, 200, 40, 40);
-    [self.view addSubview:btn];
-    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
-}
-
-- (void)btnClicked{
-    NSLog(@"ss");
-    IIViewDeckController *deckVC = (IIViewDeckController *)[[UIApplication sharedApplication] keyWindow].rootViewController;
-    NSLog(@"%d",[deckVC canRightViewPushViewControllerOverCenterController]);
-    
-    [deckVC rightViewPushViewControllerOverCenterController:[[ReplaceViewController alloc]init]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,16 +1,18 @@
 //
 //  AppDelegate.m
-//  TestViewDeck
+//  TestSWReveal
 //
-//  Created by ysj on 16/6/7.
+//  Created by ysj on 16/7/15.
 //  Copyright © 2016年 yushengjie. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
-#import "ViewDeck.h"
 #import "LeftViewController.h"
 #import "RightViewController.h"
+#import "CenterViewController.h"
+#import "SWRevealViewController.h"
+#import "CenterViewController2.h"
+#import "CommonTool.h"
 
 @interface AppDelegate ()
 
@@ -23,30 +25,36 @@
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     
-    ViewController *vc = [[ViewController alloc]init];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[CenterViewController alloc]init]];
+    
+    UINavigationController *nav2 = [[UINavigationController alloc] initWithRootViewController:[[CenterViewController2 alloc]init]];
     
     UITabBarController *tabbarController = [[UITabBarController alloc]init];
-    tabbarController.viewControllers = @[nav];
+    tabbarController.viewControllers = @[nav,nav2];
     
-    LeftViewController* leftController = [[LeftViewController alloc] init];
-    IIViewDeckController *deck = [[IIViewDeckController alloc]initWithCenterViewController:nav leftViewController:leftController];
-    deck.rightController = [[RightViewController alloc]init];
+    LeftViewController *leftVC = [[LeftViewController alloc]init];
+    RightViewController *rightVC = [[RightViewController alloc] init];
     
-//    deck.resizesCenterView = NO;
-//    deck.enabled = NO;
+    SWRevealViewController *swRevealVC = [[SWRevealViewController alloc]initWithRearViewController:leftVC frontViewController:tabbarController];
+    swRevealVC.rightViewController = rightVC;
     
-    [deck setLeftSize:200.0f];
+//    swRevealVC.rearViewRevealWidth = 150;
+//    FrontViewPositionLeftSideMostRemoved  最大限度显示右侧内容，其余部分去掉
+//    FrontViewPositionLeftSideMost         最大限度显示右侧内容，其余部分隐藏在左侧
+//    FrontViewPositionLeftSide             显示右侧内容，其余部分左侧留条
+//    FrontViewPositionLeft                 显示中间内容，可左右滑动，为默认情况
+//    FrontViewPositionRight                显示左侧内容，其余部分右侧留条
+//    FrontViewPositionRightMost            最大限度显示左侧内容，其余部分隐藏在右侧
+//    FrontViewPositionRightMostRemoved     最大限度显示左侧内容，其余部分去掉
+    [swRevealVC setFrontViewPosition:FrontViewPositionLeft animated:YES];
     
-//    deck.centerhiddenInteractivity = IIViewDeckCenterHiddenNotUserInteractiveWithTapToClose;
-//    deck.delegateMode = IIViewDeckDelegateAndSubControllers;
+    swRevealVC.toggleAnimationType = SWRevealToggleAnimationTypeSpring;
     
-    
-    
-    
-    
-    self.window.rootViewController = deck;
+    self.window.rootViewController = swRevealVC;
     [self.window makeKeyAndVisible];
+    
+    [CommonTool shareTool].tabBarController = tabbarController;
+    
     return YES;
 }
 
@@ -81,7 +89,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.yushengjie.TestViewDeck" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "com.yushengjie.TestSWReveal" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
@@ -90,7 +98,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"TestViewDeck" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"TestSWReveal" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -104,7 +112,7 @@
     // Create the coordinator and store
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"TestViewDeck.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"TestSWReveal.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
