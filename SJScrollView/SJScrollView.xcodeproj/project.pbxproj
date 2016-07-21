@@ -16,7 +16,7 @@
 		4A5252461BF426DF0036417E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A5252441BF426DF0036417E /* LaunchScreen.storyboard */; };
 		4A5252511BF426DF0036417E /* SJScrollViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5252501BF426DF0036417E /* SJScrollViewTests.m */; };
 		4A52525C1BF426DF0036417E /* SJScrollViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52525B1BF426DF0036417E /* SJScrollViewUITests.m */; };
-		4A52526B1BF441310036417E /* SJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52526A1BF441310036417E /* SJScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		4A52526B1BF441310036417E /* YSJScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A52526A1BF441310036417E /* YSJScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +54,8 @@
 		4A5252571BF426DF0036417E /* SJScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A52525B1BF426DF0036417E /* SJScrollViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJScrollViewUITests.m; sourceTree = "<group>"; };
 		4A52525D1BF426DF0036417E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4A5252691BF441310036417E /* SJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJScrollView.h; sourceTree = "<group>"; };
-		4A52526A1BF441310036417E /* SJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJScrollView.m; sourceTree = "<group>"; };
+		4A5252691BF441310036417E /* YSJScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSJScrollView.h; sourceTree = "<group>"; };
+		4A52526A1BF441310036417E /* YSJScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSJScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +108,8 @@
 			children = (
 				4A5252361BF426DF0036417E /* AppDelegate.h */,
 				4A5252371BF426DF0036417E /* AppDelegate.m */,
+				4A5252691BF441310036417E /* YSJScrollView.h */,
+				4A52526A1BF441310036417E /* YSJScrollView.m */,
 				4A5252391BF426DF0036417E /* ViewController.h */,
 				4A52523A1BF426DF0036417E /* ViewController.m */,
 				4A52523C1BF426DF0036417E /* Main.storyboard */,
@@ -115,8 +117,6 @@
 				4A5252441BF426DF0036417E /* LaunchScreen.storyboard */,
 				4A5252471BF426DF0036417E /* Info.plist */,
 				4A52523F1BF426DF0036417E /* SJScrollView.xcdatamodeld */,
-				4A5252691BF441310036417E /* SJScrollView.h */,
-				4A52526A1BF441310036417E /* SJScrollView.m */,
 				4A5252331BF426DF0036417E /* Supporting Files */,
 			);
 			path = SJScrollView;
@@ -280,7 +280,7 @@
 			files = (
 				4A5252411BF426DF0036417E /* SJScrollView.xcdatamodeld in Sources */,
 				4A52523B1BF426DF0036417E /* ViewController.m in Sources */,
-				4A52526B1BF441310036417E /* SJScrollView.m in Sources */,
+				4A52526B1BF441310036417E /* YSJScrollView.m in Sources */,
 				4A5252381BF426DF0036417E /* AppDelegate.m in Sources */,
 				4A5252351BF426DF0036417E /* main.m in Sources */,
 			);
@@ -506,6 +506,7 @@
 				4A5252621BF426DF0036417E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A5252631BF426DF0036417E /* Build configuration list for PBXNativeTarget "SJScrollViewTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +515,7 @@
 				4A5252651BF426DF0036417E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A5252661BF426DF0036417E /* Build configuration list for PBXNativeTarget "SJScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +524,7 @@
 				4A5252681BF426DF0036417E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
