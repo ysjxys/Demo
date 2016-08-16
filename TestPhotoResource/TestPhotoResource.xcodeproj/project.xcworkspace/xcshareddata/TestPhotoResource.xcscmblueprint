@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "98BF37A3FBFE009DCD065BFF063B60A797875429",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : 0,
-    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : 0
+    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : 0,
+    "98BF37A3FBFE009DCD065BFF063B60A797875429" : 0,
+    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BEEDAF5F-D288-4625-B795-F359EC9928F4",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : "",
-    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : "workspaceYSJ\/"
+    "FCB0F57170FAF05FBADDE2B21A8432B76EA1C843" : "workspaceYSJ\/",
+    "98BF37A3FBFE009DCD065BFF063B60A797875429" : "Demo\/",
+    "88882EAE0350D39BDE1FAAD76CD7D66D37718A05" : ""
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "TestPhotoResource",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ysjxys\/DemoPlace.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "88882EAE0350D39BDE1FAAD76CD7D66D37718A05"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ysjxys\/Demo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "98BF37A3FBFE009DCD065BFF063B60A797875429"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ysjxys\/TestMediaPlayer.git",

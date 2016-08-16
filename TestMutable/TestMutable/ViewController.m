@@ -21,7 +21,90 @@
 //    [self testModifyObjectInMutableArray];
 //    [self testReplaceObjectInMutableArray];
 //    [self testDeleteObjectInMutableArray];
-    [self testAddObjectInMutableArray];
+//    [self testAddObjectInMutableArray];
+//    [self testDeepCopy];
+//    [self testMoreDeepCopy];
+    [self testCompleteCopy];
+}
+
+//mutbleCopy 是深拷贝，但仅对对象进行深处理，子内容仍为指针复制
+- (void)testDeepCopy{
+    NSMutableArray *dataArray1 = [NSMutableArray arrayWithObjects:
+                                 [NSMutableString stringWithString:@"1"],
+                                 [NSMutableString stringWithString:@"2"],
+                                 [NSMutableString stringWithString:@"3"],
+                                 [NSMutableString stringWithString:@"4"],
+                                 nil
+                                 ];
+    NSMutableArray *dataArray2 = [NSMutableArray arrayWithObjects:
+                                 [NSMutableString stringWithString:@"one"],
+                                 [NSMutableString stringWithString:@"two"],
+                                 [NSMutableString stringWithString:@"three"],
+                                 [NSMutableString stringWithString:@"four"],
+                                 dataArray1,
+                                 nil
+                                 ];
+    NSMutableArray *dataArray3 = [dataArray2 mutableCopy];
+    NSMutableString *mStr = dataArray2[0];
+    [mStr appendString:@"--ONE"];
+    
+    NSLog(@"==:%d",dataArray2 == dataArray3);
+    NSLog(@"equal:%d",[dataArray2 isEqualToArray:dataArray3]);
+    NSLog(@"dataArray3：%@",dataArray3);
+    NSLog(@"dataArray2：%@",dataArray2);
+}
+
+//initWithArray:copyItem:   单层深复制，对于多层深复制无效
+- (void)testMoreDeepCopy{
+    NSMutableArray *dataArray1 = [NSMutableArray arrayWithObjects:
+                                [NSMutableString stringWithString:@"1"],
+                                [NSMutableString stringWithString:@"2"],
+                                [NSMutableString stringWithString:@"3"],
+                                [NSMutableString stringWithString:@"4"],
+                                nil];
+    NSMutableArray *dataArray2 = [NSMutableArray arrayWithObjects:
+                                [NSMutableString stringWithString:@"one"],
+                                [NSMutableString stringWithString:@"two"],
+                                [NSMutableString stringWithString:@"three"],
+                                [NSMutableString stringWithString:@"four"],
+                                dataArray1,nil];
+    NSMutableArray *dataArray3 = [[NSMutableArray alloc]initWithArray:dataArray2 copyItems:YES];
+    NSMutableString *mStr = dataArray2[0];
+    [mStr appendString:@"--ONE"];
+    NSLog(@"dataArray3：%@",dataArray3);
+    NSLog(@"dataArray2：%@",dataArray2);
+    
+    NSMutableArray *mArr = (NSMutableArray *)dataArray2[4];
+    NSMutableString *mStr2 = mArr[0];
+    [mStr2 appendString:@"--ONE"];
+    NSLog(@"dataArray3：%@",dataArray3);
+    NSLog(@"dataArray2：%@",dataArray2);
+}
+
+//利用归档解档进行完全复制
+- (void)testCompleteCopy{
+    NSMutableArray *dataArray1 = [NSMutableArray arrayWithObjects:
+                                [NSMutableString stringWithString:@"1"],
+                                [NSMutableString stringWithString:@"2"],
+                                [NSMutableString stringWithString:@"3"],
+                                [NSMutableString stringWithString:@"4"],
+                                  nil];
+    NSMutableArray *dataArray2 = [NSMutableArray arrayWithObjects:
+                                [NSMutableString stringWithString:@"one"],
+                                [NSMutableString stringWithString:@"two"],
+                                [NSMutableString stringWithString:@"three"],
+                                [NSMutableString stringWithString:@"four"],
+                                  dataArray1,nil];
+//    NSKeyedArchiver   归档数据
+//    NSKeyedUnarchiver 解档数据
+    NSMutableArray *dataArray3 = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:dataArray2]];
+    
+    NSMutableArray *mArr = (NSMutableArray *)dataArray2[4];
+    NSMutableString *mStr2 = mArr[0];
+    [mStr2 appendString:@"--ONE"];
+    NSLog(@"dataArray3：%@",dataArray3);
+    NSLog(@"dataArray2：%@",dataArray2);
+    NSLog(@"isEqual:%d",[dataArray2 isEqualToArray:dataArray3]);
 }
 
 /**

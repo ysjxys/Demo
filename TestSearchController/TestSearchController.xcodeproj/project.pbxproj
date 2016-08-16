@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A91489A1D61AD220027CC77 /* NewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9148991D61AD220027CC77 /* NewViewController.m */; };
 		4A93AA041CEDBBC7005CD9AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A93AA031CEDBBC7005CD9AB /* main.m */; };
 		4A93AA071CEDBBC7005CD9AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A93AA061CEDBBC7005CD9AB /* AppDelegate.m */; };
 		4A93AA0A1CEDBBC7005CD9AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A93AA091CEDBBC7005CD9AB /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A9148981D61AD210027CC77 /* NewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewViewController.h; sourceTree = "<group>"; };
+		4A9148991D61AD220027CC77 /* NewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewViewController.m; sourceTree = "<group>"; };
 		4A93A9FF1CEDBBC7005CD9AB /* TestSearchController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSearchController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A93AA031CEDBBC7005CD9AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4A93AA051CEDBBC7005CD9AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				4A93AA061CEDBBC7005CD9AB /* AppDelegate.m */,
 				4A93AA081CEDBBC7005CD9AB /* ViewController.h */,
 				4A93AA091CEDBBC7005CD9AB /* ViewController.m */,
+				4A9148981D61AD210027CC77 /* NewViewController.h */,
+				4A9148991D61AD220027CC77 /* NewViewController.m */,
 				4A93AA111CEDBBC8005CD9AB /* Assets.xcassets */,
 				4A93AA131CEDBBC8005CD9AB /* LaunchScreen.storyboard */,
 				4A93AA161CEDBBC8005CD9AB /* Info.plist */,
@@ -271,6 +276,7 @@
 			files = (
 				4A93AA0A1CEDBBC7005CD9AB /* ViewController.m in Sources */,
 				4A93AA101CEDBBC8005CD9AB /* TestSearchController.xcdatamodeld in Sources */,
+				4A91489A1D61AD220027CC77 /* NewViewController.m in Sources */,
 				4A93AA071CEDBBC7005CD9AB /* AppDelegate.m in Sources */,
 				4A93AA041CEDBBC7005CD9AB /* main.m in Sources */,
 			);
@@ -490,6 +496,7 @@
 				4A93AA311CEDBBC8005CD9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A93AA321CEDBBC8005CD9AB /* Build configuration list for PBXNativeTarget "TestSearchControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +505,7 @@
 				4A93AA341CEDBBC8005CD9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A93AA351CEDBBC8005CD9AB /* Build configuration list for PBXNativeTarget "TestSearchControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +514,7 @@
 				4A93AA371CEDBBC8005CD9AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

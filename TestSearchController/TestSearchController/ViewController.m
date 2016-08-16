@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NewViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchResultsUpdating,UISearchControllerDelegate,UISearchBarDelegate,UISearchDisplayDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -20,8 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataArr = @[@"语文",@"数学",@"物理",@"化学",@"生物",@"英语",@"地理",@"历史",@"政治",@"体育"];
+    /**
+     *  不添加这个属性 push时会使searchVC 不隐藏，present时产生偏移.
+     */
+    self.definesPresentationContext = YES;
     
+    self.dataArr = @[@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10"];
     CGFloat yDistance = 0;
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, yDistance, self.view.frame.size.width, self.view.frame.size.height-yDistance) style:UITableViewStylePlain];
     tableView.delegate = self;
@@ -40,11 +45,14 @@
     searchVC.searchBar.placeholder = @"请输入搜索内容";
     [searchVC.searchBar setValue:@"取消" forKey:@"_cancelButtonText"];
     searchVC.searchBar.scopeButtonTitles = @[@"scope1",@"scope2"];
-    searchVC.dimsBackgroundDuringPresentation = YES;
+    //是否添加半透明覆盖层
+    searchVC.dimsBackgroundDuringPresentation = NO;
+    //是否隐藏导航栏
     searchVC.hidesNavigationBarDuringPresentation = YES;
     searchVC.searchBar.tintColor = [UIColor blackColor];
     searchVC.searchBar.barTintColor = [UIColor purpleColor];
     self.searvhVC = searchVC;
+    
     tableView.tableHeaderView = searchVC.searchBar;
 }
 
@@ -58,10 +66,14 @@
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController{
     NSString *text = searchController.searchBar.text;
-    [self.searchDataArr removeAllObjects];
-    for (NSString *str in self.dataArr) {
-        if ([str containsString:text]) {
-            [self.searchDataArr addObject:str];
+    if ([text isEqualToString:@""]) {
+        self.searchDataArr = [self.dataArr mutableCopy];
+    }else{
+        [self.searchDataArr removeAllObjects];
+        for (NSString *str in self.dataArr) {
+            if ([str containsString:text]) {
+                [self.searchDataArr addObject:str];
+            }
         }
     }
     [self.tableView reloadData];
@@ -110,6 +122,13 @@
         cell.textLabel.text = self.dataArr[indexPath.row];
     }
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"xxxx");
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NewViewController *newVC = [[NewViewController alloc]init];
+    [self.navigationController pushViewController:newVC animated:YES];
 }
 
 
