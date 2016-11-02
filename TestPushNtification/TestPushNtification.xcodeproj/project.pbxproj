@@ -210,6 +210,7 @@
 				TargetAttributes = {
 					4A42EC441C3E3767001EFB4A = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2EUZ5J663F;
 					};
 					4A42EC601C3E3767001EFB4A = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -415,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				INFOPLIST_FILE = TestPushNtification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TestPushNtification;
@@ -426,6 +428,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				INFOPLIST_FILE = TestPushNtification/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TestPushNtification;
@@ -500,6 +503,7 @@
 				4A42EC771C3E3768001EFB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A42EC781C3E3768001EFB4A /* Build configuration list for PBXNativeTarget "TestPushNtificationTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +512,7 @@
 				4A42EC7A1C3E3768001EFB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A42EC7B1C3E3768001EFB4A /* Build configuration list for PBXNativeTarget "TestPushNtificationUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +521,7 @@
 				4A42EC7D1C3E3768001EFB4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
