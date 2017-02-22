@@ -24,12 +24,15 @@
     
     ViewController *vc = [[ViewController alloc]init];
     vc.tabBarItem.title = @"imagePicker";
+    UINavigationController *nav1 = [[UINavigationController alloc]initWithRootViewController:vc];
+    
     
     AssetsViewController *avc = [[AssetsViewController alloc]init];
     avc.tabBarItem.title = @"AssetsVC";
+    UINavigationController *nav2 = [[UINavigationController alloc]initWithRootViewController:avc];
     
     UITabBarController *tabbar = [[UITabBarController alloc]init];
-    tabbar.viewControllers = @[vc,avc];
+    tabbar.viewControllers = @[nav1,nav2];
     
     window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];

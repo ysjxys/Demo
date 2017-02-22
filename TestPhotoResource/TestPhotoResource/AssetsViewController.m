@@ -8,6 +8,7 @@
 
 #import "AssetsViewController.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+#import "PhotosViewController.h"
 
 @interface AssetsViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -36,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.imageGroup removeAllObjects];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -84,4 +86,60 @@
     cell.detailTextLabel.text = [@(group.numberOfAssets) stringValue];
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+//    ALAssetsGroup *group = [self.imageGroup objectAtIndex:indexPath.row];
+//    
+//    PhotosViewController *photoVC = [[PhotosViewController alloc]init];
+//    photoVC.assetGroup = group;
+//    
+//    [self.navigationController pushViewController:photoVC animated:YES];
+    [self initData2];
+}
+
+- (void)initData2{
+    NSMutableOrderedSet *photos = [NSMutableOrderedSet new];
+    dispatch_group_t dispatchGroup = dispatch_group_create();
+    dispatch_queue_t queue = dispatch_queue_create("com.neteaseyx.xiupin", DISPATCH_QUEUE_PRIORITY_DEFAULT);
+    dispatch_group_enter(dispatchGroup);
+    _assetsLibrary = [[ALAssetsLibrary alloc] init];
+    
+    [_assetsLibrary enumerateGroupsWithTypes:ALAssetsGroupSavedPhotos usingBlock:^(ALAssetsGroup *group, BOOL *stop) {
+        if (!group) {
+            dispatch_group_leave(dispatchGroup);
+            return ;
+        }else{
+            //图片
+            [group setAssetsFilter:[ALAssetsFilter allPhotos]];
+            
+            dispatch_group_enter(dispatchGroup);
+            [group enumerateAssetsWithOptions:NSEnumerationReverse usingBlock:^(ALAsset *result, NSUInteger index, BOOL *stop) {
+                dispatch_async(queue, ^{
+                    if (result == nil) {
+                        dispatch_group_leave(dispatchGroup);
+                        return ;
+                    }
+                    if ([[result defaultRepresentation] url].absoluteString.length == 0) {
+                        return;
+                    }
+                    
+                    [photos addObject:result];
+                });
+            }];
+        }
+    } failureBlock:^(NSError *error) {
+        NSLog(@"error:%@",error);
+        dispatch_group_leave(dispatchGroup);
+    }];
+    
+    dispatch_group_notify(dispatchGroup, queue, ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            PhotosViewController *photoVC = [[PhotosViewController alloc]init];
+            photoVC.assetArr = [photos array].mutableCopy;
+            
+            [self.navigationController pushViewController:photoVC animated:YES];
+        });
+    });
+}
+
 @end

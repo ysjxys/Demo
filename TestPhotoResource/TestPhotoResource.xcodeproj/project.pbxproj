@@ -16,6 +16,8 @@
 		4AB11CE41C9F8374005A5AF0 /* TestPhotoResourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB11CE31C9F8374005A5AF0 /* TestPhotoResourceTests.m */; };
 		4AB11CEF1C9F8374005A5AF0 /* TestPhotoResourceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB11CEE1C9F8374005A5AF0 /* TestPhotoResourceUITests.m */; };
 		4AB11D001C9FCC72005A5AF0 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB11CFF1C9FCC72005A5AF0 /* AssetsViewController.m */; };
+		7EA0BE4A1E2DCA8800DDE739 /* PhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA0BE491E2DCA8800DDE739 /* PhotosViewController.m */; };
+		F283446FBB11223F6A8969FA /* libPods-TestPhotoResource.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B61D9F9C54CCE244BB0DB9F /* libPods-TestPhotoResource.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,11 @@
 		4AB11CF01C9F8374005A5AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB11CFE1C9FCC72005A5AF0 /* AssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
 		4AB11CFF1C9FCC72005A5AF0 /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
+		5D40E52EDE7F07D3353E6B78 /* Pods-TestPhotoResource.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPhotoResource.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestPhotoResource/Pods-TestPhotoResource.release.xcconfig"; sourceTree = "<group>"; };
+		7EA0BE481E2DCA8800DDE739 /* PhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosViewController.h; sourceTree = "<group>"; };
+		7EA0BE491E2DCA8800DDE739 /* PhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosViewController.m; sourceTree = "<group>"; };
+		9B61D9F9C54CCE244BB0DB9F /* libPods-TestPhotoResource.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestPhotoResource.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE4C4C511CE8C07F3A62A7E8 /* Pods-TestPhotoResource.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestPhotoResource.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestPhotoResource/Pods-TestPhotoResource.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F283446FBB11223F6A8969FA /* libPods-TestPhotoResource.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE70A2A3486C03964611DCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C4C511CE8C07F3A62A7E8 /* Pods-TestPhotoResource.debug.xcconfig */,
+				5D40E52EDE7F07D3353E6B78 /* Pods-TestPhotoResource.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4AB11CBA1C9F8373005A5AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +105,8 @@
 				4AB11CE21C9F8374005A5AF0 /* TestPhotoResourceTests */,
 				4AB11CED1C9F8374005A5AF0 /* TestPhotoResourceUITests */,
 				4AB11CC41C9F8373005A5AF0 /* Products */,
+				0AE70A2A3486C03964611DCB /* Pods */,
+				A0B1D619E446E2BBA810B1A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +129,8 @@
 				4AB11CCD1C9F8373005A5AF0 /* ViewController.m */,
 				4AB11CFE1C9FCC72005A5AF0 /* AssetsViewController.h */,
 				4AB11CFF1C9FCC72005A5AF0 /* AssetsViewController.m */,
+				7EA0BE481E2DCA8800DDE739 /* PhotosViewController.h */,
+				7EA0BE491E2DCA8800DDE739 /* PhotosViewController.m */,
 				4AB11CD51C9F8373005A5AF0 /* Assets.xcassets */,
 				4AB11CDA1C9F8373005A5AF0 /* Info.plist */,
 				4AB11CD21C9F8373005A5AF0 /* TestPhotoResource.xcdatamodeld */,
@@ -145,6 +166,14 @@
 			path = TestPhotoResourceUITests;
 			sourceTree = "<group>";
 		};
+		A0B1D619E446E2BBA810B1A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B61D9F9C54CCE244BB0DB9F /* libPods-TestPhotoResource.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AB11CF31C9F8374005A5AF0 /* Build configuration list for PBXNativeTarget "TestPhotoResource" */;
 			buildPhases = (
+				0FF9FBB21E63B769725B7B1A /* [CP] Check Pods Manifest.lock */,
 				4AB11CBF1C9F8373005A5AF0 /* Sources */,
 				4AB11CC01C9F8373005A5AF0 /* Frameworks */,
 				4AB11CC11C9F8373005A5AF0 /* Resources */,
+				80073047112F3C74540DFAA7 /* [CP] Embed Pods Frameworks */,
+				A9A64106A2B161AB75970912 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,6 +244,7 @@
 				TargetAttributes = {
 					4AB11CC21C9F8373005A5AF0 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2EUZ5J663F;
 					};
 					4AB11CDE1C9F8373005A5AF0 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -269,12 +302,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FF9FBB21E63B769725B7B1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80073047112F3C74540DFAA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestPhotoResource/Pods-TestPhotoResource-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9A64106A2B161AB75970912 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestPhotoResource/Pods-TestPhotoResource-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4AB11CBF1C9F8373005A5AF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4AB11D001C9FCC72005A5AF0 /* AssetsViewController.m in Sources */,
+				7EA0BE4A1E2DCA8800DDE739 /* PhotosViewController.m in Sources */,
 				4AB11CD41C9F8373005A5AF0 /* TestPhotoResource.xcdatamodeld in Sources */,
 				4AB11CCE1C9F8373005A5AF0 /* ViewController.m in Sources */,
 				4AB11CCB1C9F8373005A5AF0 /* AppDelegate.m in Sources */,
@@ -396,8 +478,10 @@
 		};
 		4AB11CF41C9F8374005A5AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4C4C511CE8C07F3A62A7E8 /* Pods-TestPhotoResource.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				INFOPLIST_FILE = TestPhotoResource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -408,8 +492,10 @@
 		};
 		4AB11CF51C9F8374005A5AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D40E52EDE7F07D3353E6B78 /* Pods-TestPhotoResource.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				INFOPLIST_FILE = TestPhotoResource/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

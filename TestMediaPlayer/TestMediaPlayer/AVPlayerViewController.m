@@ -157,6 +157,8 @@
     self.avPlayItem = self.itemArray[0];
     
     AVPlayer *avPlayer = [AVPlayer playerWithPlayerItem:self.avPlayItem];
+//    AVPlayer *avPlayer = [AVPlayer playerWithURL:[NSURL fileURLWithPath:@"file:///var/mobile/Media/DCIM/102APPLE/IMG_2358.MOV"]];
+    
     
     self.avPlayer = avPlayer;
     
