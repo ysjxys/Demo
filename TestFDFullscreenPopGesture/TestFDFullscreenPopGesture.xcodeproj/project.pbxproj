@@ -19,6 +19,7 @@
 		4AFC128B1DC6DA7A003083CC /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC128A1DC6DA7A003083CC /* PushViewController.m */; };
 		4AFC128E1DC6E04C003083CC /* Push2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AFC128D1DC6E04C003083CC /* Push2ViewController.m */; };
 		4E7398FB0DA9582E32C7E674 /* libPods-TestFDFullscreenPopGesture.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BC6A2B846B7D9402E5CE5F /* libPods-TestFDFullscreenPopGesture.a */; };
+		7E67439D1E69681F00485407 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E67439C1E69681F00485407 /* PresentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		4AFC128C1DC6E04C003083CC /* Push2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Push2ViewController.h; sourceTree = "<group>"; };
 		4AFC128D1DC6E04C003083CC /* Push2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Push2ViewController.m; sourceTree = "<group>"; };
 		71BC6A2B846B7D9402E5CE5F /* libPods-TestFDFullscreenPopGesture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestFDFullscreenPopGesture.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E67439B1E69681F00485407 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		7E67439C1E69681F00485407 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
 		D7993CC0186CF119FAA04A61 /* Pods-TestFDFullscreenPopGesture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFDFullscreenPopGesture.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestFDFullscreenPopGesture/Pods-TestFDFullscreenPopGesture.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,6 +127,8 @@
 				4AFC128A1DC6DA7A003083CC /* PushViewController.m */,
 				4AFC128C1DC6E04C003083CC /* Push2ViewController.h */,
 				4AFC128D1DC6E04C003083CC /* Push2ViewController.m */,
+				7E67439B1E69681F00485407 /* PresentViewController.h */,
+				7E67439C1E69681F00485407 /* PresentViewController.m */,
 				4AFC125C1DC3519D003083CC /* Main.storyboard */,
 				4AFC12621DC3519D003083CC /* Assets.xcassets */,
 				4AFC12641DC3519D003083CC /* LaunchScreen.storyboard */,
@@ -368,6 +373,7 @@
 				4AFC128E1DC6E04C003083CC /* Push2ViewController.m in Sources */,
 				4AFC128B1DC6DA7A003083CC /* PushViewController.m in Sources */,
 				4AFC12581DC3519D003083CC /* AppDelegate.m in Sources */,
+				7E67439D1E69681F00485407 /* PresentViewController.m in Sources */,
 				4AFC12611DC3519D003083CC /* TestFDFullscreenPopGesture.xcdatamodeld in Sources */,
 				4AFC12551DC3519D003083CC /* main.m in Sources */,
 			);

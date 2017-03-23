@@ -10,7 +10,7 @@
 #import "PushViewController.h"
 #import "Push2ViewController.h"
 #import "UINavigationController+FDFullscreenPopGesture.h"
-
+#import "PresentViewController.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *disableNavPushBtn;
@@ -21,6 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"present" style:UIBarButtonItemStylePlain target:self action:@selector(rightBarBtnClick)];
+    self.navigationController.fd_prefersNavigationBarHidden = YES;
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"push" forState:UIControlStateNormal];
@@ -34,7 +38,7 @@
     [btn2 setTitle:@"push2" forState:UIControlStateNormal];
     [btn2 setTintColor:self.view.tintColor];
     [btn2 setTitleColor:self.view.tintColor forState:UIControlStateNormal];
-    btn2.frame = CGRectMake(140, 250, self.view.frame.size.width-140*2, 40);
+    btn2.frame = CGRectMake(130, 250, self.view.frame.size.width-130*2, 40);
     [btn2 addTarget:self action:@selector(push2BtnClicked) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn2];
     
@@ -51,6 +55,11 @@
     _disableNavPushBtn = disableNavPushBtn;
     
     [self disableNavPushBtnClicked];
+}
+    
+- (void)rightBarBtnClick{
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[[PresentViewController alloc] init]];
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)disableNavPushBtnClicked{
