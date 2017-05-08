@@ -66,13 +66,13 @@
 }
 
 - (void)btnClicked{
-//    [self testGetAndProgress];
-    if (_downloadTask.state == NSURLSessionTaskStateCompleted || _downloadTask.state == NSURLSessionTaskStateCanceling ||
-        _downloadTask.state == NSURLSessionTaskStateRunning) {
-        return;
-    }else{
-        [_downloadTask resume];
-    }
+    [self testGetAndProgress];
+//    if (_downloadTask.state == NSURLSessionTaskStateCompleted || _downloadTask.state == NSURLSessionTaskStateCanceling ||
+//        _downloadTask.state == NSURLSessionTaskStateRunning) {
+//        return;
+//    }else{
+//        [_downloadTask resume];
+//    }
 }
 
 - (void)prepareDownloadAndProgress{

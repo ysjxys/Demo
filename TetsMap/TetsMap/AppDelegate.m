@@ -18,7 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [MAMapServices sharedServices].apiKey = @"f555e8aa271c78f0d50955c67ce45bbe";
+    [AMapServices sharedServices].apiKey = @"f555e8aa271c78f0d50955c67ce45bbe";
+    //person
+    //f555e8aa271c78f0d50955c67ce45bbe
+    //tbb business
+    //e9d53670921e9c0fe2e16127f09862c4
     
     ViewController *vc = [[ViewController alloc]init];
     

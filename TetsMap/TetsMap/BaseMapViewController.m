@@ -18,6 +18,7 @@
     self = [super init];
     self.title = title;
     self.mapView = map;
+    map.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:map];
     return self;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D779DAA455962C326D038CB /* libPods-TetsMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82452CB1CDBF417B47678172 /* libPods-TetsMap.a */; };
 		4A1FB4671CD97F02000C7EC6 /* CusAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1FB4661CD97F02000C7EC6 /* CusAnnotationView.m */; };
 		4AAC72721CDC34710075AA63 /* BaseMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC72711CDC34710075AA63 /* BaseMapViewController.m */; };
 		4AAC72751CDC3F600075AA63 /* UserLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC72741CDC3F600075AA63 /* UserLocationViewController.m */; };
@@ -18,7 +19,6 @@
 		4AF98E201C23A30400DE69F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF98E1F1C23A30400DE69F1 /* Assets.xcassets */; };
 		4AF98E2E1C23A30400DE69F1 /* TetsMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E2D1C23A30400DE69F1 /* TetsMapTests.m */; };
 		4AF98E391C23A30500DE69F1 /* TetsMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF98E381C23A30500DE69F1 /* TetsMapUITests.m */; };
-		B82C1F0074FB6AC889096AF2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 829A01EF3F06DAB38597D828 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		00E95188DBE47054B10782F4 /* Pods-TetsMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TetsMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-TetsMap/Pods-TetsMap.release.xcconfig"; sourceTree = "<group>"; };
 		4A1FB4651CD97F02000C7EC6 /* CusAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CusAnnotationView.h; sourceTree = "<group>"; };
 		4A1FB4661CD97F02000C7EC6 /* CusAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CusAnnotationView.m; sourceTree = "<group>"; };
 		4AAC72701CDC34710075AA63 /* BaseMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMapViewController.h; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		4AF98E341C23A30500DE69F1 /* TetsMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TetsMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AF98E381C23A30500DE69F1 /* TetsMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TetsMapUITests.m; sourceTree = "<group>"; };
 		4AF98E3A1C23A30500DE69F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		829A01EF3F06DAB38597D828 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		72DEE7B4B58E4E614E1A9549 /* Pods-TetsMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TetsMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TetsMap/Pods-TetsMap.debug.xcconfig"; sourceTree = "<group>"; };
+		82452CB1CDBF417B47678172 /* libPods-TetsMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TetsMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B82C1F0074FB6AC889096AF2 /* libPods.a in Frameworks */,
+				3D779DAA455962C326D038CB /* libPods-TetsMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,11 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F2FE11BD0361A0713962C28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72DEE7B4B58E4E614E1A9549 /* Pods-TetsMap.debug.xcconfig */,
+				00E95188DBE47054B10782F4 /* Pods-TetsMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		365C25D5BA9B1C9EDA09A9F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				4AAC72791CDC7B960075AA63 /* CoreLocation.framework */,
-				829A01EF3F06DAB38597D828 /* libPods.a */,
+				82452CB1CDBF417B47678172 /* libPods-TetsMap.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,8 +139,8 @@
 				4AF98E2C1C23A30400DE69F1 /* TetsMapTests */,
 				4AF98E371C23A30500DE69F1 /* TetsMapUITests */,
 				4AF98E0E1C23A30400DE69F1 /* Products */,
-				6311A04E0442211F87225AF1 /* Pods */,
 				365C25D5BA9B1C9EDA09A9F5 /* Frameworks */,
+				1F2FE11BD0361A0713962C28 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,15 +199,6 @@
 			path = TetsMapUITests;
 			sourceTree = "<group>";
 		};
-		6311A04E0442211F87225AF1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */,
-				01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,12 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AF98E3D1C23A30500DE69F1 /* Build configuration list for PBXNativeTarget "TetsMap" */;
 			buildPhases = (
-				401B788B2EE86AB22374A441 /* Check Pods Manifest.lock */,
+				D5B2C91228CD0FA38099B7BD /* [CP] Check Pods Manifest.lock */,
 				4AF98E091C23A30400DE69F1 /* Sources */,
 				4AF98E0A1C23A30400DE69F1 /* Frameworks */,
 				4AF98E0B1C23A30400DE69F1 /* Resources */,
-				E00B32B7BDECC8BE2364596C /* Copy Pods Resources */,
-				5B9EDD90652E9F639513E207 /* Embed Pods Frameworks */,
+				5D416C28E4CB20C79AB3508E /* [CP] Embed Pods Frameworks */,
+				36A8432800E5B880D42F1126 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -269,6 +269,7 @@
 				TargetAttributes = {
 					4AF98E0C1C23A30400DE69F1 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 2EUZ5J663F;
 					};
 					4AF98E281C23A30400DE69F1 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -326,49 +327,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		401B788B2EE86AB22374A441 /* Check Pods Manifest.lock */ = {
+		36A8432800E5B880D42F1126 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TetsMap/Pods-TetsMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5B9EDD90652E9F639513E207 /* Embed Pods Frameworks */ = {
+		5D416C28E4CB20C79AB3508E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TetsMap/Pods-TetsMap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E00B32B7BDECC8BE2364596C /* Copy Pods Resources */ = {
+		D5B2C91228CD0FA38099B7BD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -503,9 +504,10 @@
 		};
 		4AF98E3E1C23A30500DE69F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76FAC5096E284A35CD8C37A2 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 72DEE7B4B58E4E614E1A9549 /* Pods-TetsMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TetsMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -517,9 +519,10 @@
 		};
 		4AF98E3F1C23A30500DE69F1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01A3A6DF2F4C227CE8ACF528 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 00E95188DBE47054B10782F4 /* Pods-TetsMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2EUZ5J663F;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TetsMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

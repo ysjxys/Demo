@@ -40,7 +40,7 @@ typedef void(^ErrorHandle)(NSString *errorMsg);
     NSDictionary *dict = @{@"":@""};
 //    NSString *urlStr = @"http://pub-web.leziyou.com/leziyou-web-new/api/v2/topic!types.action";
     
-    NSString *urlStr = @"http://192.168.10.119:8080/hztour-api/api/travel!listHotspotByParentCode.action?page=0&channelCode=ZTESEJUSUO&keyStr=%E7%81%AF%E7%AC%BC";
+    NSString *urlStr = @"http://pub-web.leziyou.com/leziyou-web-new/api/v2/channel!childChannel.action?appId=129&id=1503312&appCode=VLG5CFXZ";
     [ViewController postJSONWithUrl:urlStr parameters:dict success:^(id response) {
         NSLog(@"%@",response);
     } fail:^(NSString *errorMsg) {

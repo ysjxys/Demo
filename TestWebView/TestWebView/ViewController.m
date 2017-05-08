@@ -20,7 +20,8 @@
     webView.delegate = self;
     [self.view addSubview:webView];
     
-    NSURL *url = [NSURL URLWithString:@"http://weibo.com/hangzhoutourism"];
+//    NSURL *url = [NSURL URLWithString:@"https://www.tmall.com/"];
+    NSURL *url = [NSURL URLWithString:@"https://172.16.14.115:9000/person/json"];
 //    NSURL *url = [NSURL URLWithString:@"http://data.zjxcdfs.com"];
     [webView loadRequest:[NSURLRequest requestWithURL:url]];
 }
