@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIScrollView *mainScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 500)];
+    UIScrollView *mainScroll = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, 320, 300)];
 //    mainScroll.delegate = self;
 //    mainScroll.contentSize = CGSizeMake(960, 500);
     mainScroll.contentSize = CGSizeMake(320, 500);

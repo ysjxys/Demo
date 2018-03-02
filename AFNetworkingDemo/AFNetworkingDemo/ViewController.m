@@ -37,10 +37,11 @@ typedef void(^ErrorHandle)(NSString *errorMsg);
         NSLog(@"%ld",status);
     }];
     
-    NSDictionary *dict = @{@"":@""};
+    NSDictionary *dict = @{@"orderNo": @"031709220000901", @"userId": @"", @"confirm": @"true"};
 //    NSString *urlStr = @"http://pub-web.leziyou.com/leziyou-web-new/api/v2/topic!types.action";
-    
-    NSString *urlStr = @"http://pub-web.leziyou.com/leziyou-web-new/api/v2/channel!childChannel.action?appId=129&id=1503312&appCode=VLG5CFXZ";
+//    NSString *urlStr = @"http://pub-web.leziyou.com/leziyou-web-new/api/v2/channel!childChannel.action?appId=129&id=1503312&appCode=VLG5CFXZ";
+
+    NSString *urlStr = @"http://usercenter-gate.dev.ops.com/test/abort";
     [ViewController postJSONWithUrl:urlStr parameters:dict success:^(id response) {
         NSLog(@"%@",response);
     } fail:^(NSString *errorMsg) {

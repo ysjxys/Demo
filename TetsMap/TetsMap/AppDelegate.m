@@ -18,7 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [AMapServices sharedServices].apiKey = @"f555e8aa271c78f0d50955c67ce45bbe";
+    [AMapServices sharedServices].apiKey = @"52fbf5403272059d9986801aaee606a2";
     //person
     //f555e8aa271c78f0d50955c67ce45bbe
     //tbb business

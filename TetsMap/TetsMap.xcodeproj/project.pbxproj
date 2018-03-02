@@ -512,7 +512,7 @@
 				INFOPLIST_FILE = TetsMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Rider-Source-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -527,7 +527,7 @@
 				INFOPLIST_FILE = TetsMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.harry.TetsMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.Rider-Source-Dev";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
