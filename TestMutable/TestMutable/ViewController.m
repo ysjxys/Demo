@@ -25,6 +25,63 @@
 //    [self testDeepCopy];
 //    [self testMoreDeepCopy];
     [self testCompleteCopy];
+    
+//    [self testCopyString];
+//    [self testCopyVessel];
+}
+
+//容器类不可变对象拷贝
+- (void)testCopyVessel {
+    NSMutableString *string = [NSMutableString stringWithFormat:@"ludashi"];
+    //第二种：容器类不可变对象拷贝
+    NSLog(@"容器类不可变对象拷贝");
+    NSArray *array = [NSArray arrayWithObjects:string, @"b", nil];
+    NSLog(@" array[0] = %@", array[0]);
+    
+    //把array通过copy的方式把值赋给array2
+    NSArray *array2 = [array copy];
+    NSLog(@"array2[0] = %@", array2[0]);
+    
+    //把array通过mutableCopy方式把值赋给array3
+    NSArray *array3 = [array mutableCopy];
+    NSLog(@"array3[0] = %@", array3[0]);
+    
+    //分别输出每个地址
+    NSLog(@"分别输出每个地址");
+    NSLog(@" array_p = %p", array);
+    NSLog(@"array2_p = %p", array2);
+    NSLog(@"array3_p = %p", array3);
+    
+    //分别输出每个地址
+    NSLog(@"分别输出拷贝后数组中第一个元素的地址");
+    NSLog(@" array_p[0] = %p", array[0]);
+    NSLog(@"array2_p[0] = %p", array2[0]);
+    NSLog(@"array3_p[0] = %p", array3[0]);
+}
+
+//非容器类不可变对象拷贝NSString
+- (void)testCopyString {
+    NSLog(@"非容器类不可变对象拷贝NSString");
+    NSString *str = @"ludashi";
+    NSLog(@" str = %@", str);
+    
+    //把str通过静态方法的方式把值赋给str2
+    NSString *str1 = [NSString stringWithString:str];
+    NSLog(@"str1 = %@", str1);
+    
+    //把str通过copy的方式把值赋给str2
+    NSString *str2 = [str copy];
+    NSLog(@"str2 = %@", str2);
+    
+    //把str通过mutableCopy的方式把值赋给str3
+    NSString *str3 = [str mutableCopy];
+    NSLog(@"str3 = %@", str3);
+    
+    //分别输出每个字符串的内存地址
+    NSLog(@" str-p = %p", str);
+    NSLog(@"str1-p = %p", str1);
+    NSLog(@"str2-p = %p", str2);
+    NSLog(@"str3-p = %p", str3);
 }
 
 //mutbleCopy 是深拷贝，但仅对对象进行深处理，子内容仍为指针复制
